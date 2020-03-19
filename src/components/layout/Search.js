@@ -1,8 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Search extends Component {
   state = {
     text: ''
+  }
+
+  static propTypes = {
+    searchGifs: PropTypes.func.isRequired,
   }
 
   onChange = (event) => {
@@ -19,8 +24,8 @@ class Search extends Component {
     return (
       <div>
         <form onSubmit={this.onSubmit} className="form">
-          <input type="text" name="text" placeholder="Search for a gif..." onChange={this.onChange}/>
-          <input type='submit' className="btn"/>
+          <input type="text" name="text" placeholder="Search for a gif..." value={this.state.text} onChange={this.onChange}/>
+          <input type='submit' value="Search" className="btn"/>
         </form>
       </div>
     )
