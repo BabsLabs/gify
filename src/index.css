@@ -20,14 +20,6 @@ code {
   align-items: center;
   z-index: 1;
   width: 100%;
-}
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-}
-
-.navbar li {
-  display: block;
-  padding-left: .5rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
 }
