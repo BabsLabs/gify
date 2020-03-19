@@ -10,14 +10,6 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <h1><FontAwesomeIcon icon={faGift} /> GiftyGif Finder</h1>
-      <ul>
-        <li>
-          Home
-        </li>
-        <li>
-          About
-        </li>
-      </ul>
     </nav>
   )
 }
