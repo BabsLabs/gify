@@ -11,5 +11,6 @@ A simple gif finder built with React!
 
 ## Technologies
 - React
-- Axios
 - Node / NPM
+- Axios
+- Font Awesome Icons
