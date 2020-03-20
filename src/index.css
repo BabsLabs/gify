@@ -47,7 +47,6 @@ input[type='submit']:hover {
 }
 
 input[type='text'] {
-  color: #fff;
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem;
