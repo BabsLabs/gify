@@ -21,5 +21,23 @@ code {
   z-index: 1;
   width: 100%;
   padding-left: 1rem;
-  margin-bottom: 1rem;
+}
+
+.form {
+  padding: 10px;
+  background-color: antiquewhite;
+}
+
+.form input {
+  padding: 10px;
+  margin: 10px;
+}
+
+
+.gifs {
+  display: inline ;
+}
+
+.gif {
+  padding: 1rem;
 }
