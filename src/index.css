@@ -54,3 +54,8 @@ input[type='submit']:hover {
 .gif {
   padding: 1rem;
 }
+
+.alert {
+  background-color: tomato;
+  padding: 10px;
+}
