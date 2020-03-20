@@ -20,12 +20,13 @@ class Search extends Component {
     this.setState({ text: "" });
   }
 
-  render() {  
+  render() { 
+
     return (
       <div>
         <form onSubmit={this.onSubmit} className="form">
-          <input type="text" name="text" placeholder="Search for a gif..." value={this.state.text} onChange={this.onChange}/>
-          <input type='submit' value="Search" className="btn"/>
+          <input type="text" name="text" placeholder="Search for a gif..." value={this.state.text} onChange={this.onChange} />
+          <input type='submit' value="Search" className="btn" />
         </form>
       </div>
     )
