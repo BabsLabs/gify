@@ -16,8 +16,12 @@ class Search extends Component {
 
   onSubmit = (event) => {
     event.preventDefault();
-    this.props.searchGifs(this.state.text);
-    this.setState({ text: "" });
+    if (this.state.text === "") {
+      this.props.setAlert("Please enter something to search for")
+    } else {
+      this.props.searchGifs(this.state.text)
+      this.setState({ text: "" })
+    }
   }
 
   render() { 
