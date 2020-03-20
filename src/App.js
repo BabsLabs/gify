@@ -7,12 +7,14 @@ import './App.css';
 
 class App extends Component {
   state = {
-    gifs: []
+    gifs: [],
+    loading: false
   }
   
   searchGifs = async (text) => {
+    this.setState({ loading: true })
     const response = await axios.get(`https://api.giphy.com/v1/gifs/search?api_key=${process.env.REACT_APP_GIPHY_API_KEY}&q=${text}`)
-    this.setState({ gifs: response.data.data })
+    this.setState({ gifs: response.data.data , loading: false })
   }
 
   render() {
@@ -21,8 +23,8 @@ class App extends Component {
         <Navbar />
         <div>
           <Fragment>
-            <Search searchGifs={this.searchGifs} />
-            <Gifs gifs={this.state.gifs} />
+            <Search searchGifs={ this.searchGifs } />
+            <Gifs gifs={ this.state.gifs } loading={ this.state.loading }/>
           </Fragment>
         </div>
       </div>
